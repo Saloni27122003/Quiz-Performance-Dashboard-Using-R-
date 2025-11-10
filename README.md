@@ -1,14 +1,12 @@
 # Quiz-Performance-Dashboard-Using-R-
 This code creates an interactive dashboard using Shiny to analyze quiz scores of students. It includes histograms, comparison charts, trends, and statistics.
 
-📌 1️⃣ Installing & Loading Packages
+ 1️⃣ Installing & Loading Packages
 install.packages(c("shiny", "dplyr", "ggplot2", "plotly"))
 library(shiny)
 library(dplyr)
 library(ggplot2)
 library(plotly)
-
-
 ✔ Installs & loads required libraries:
 
 Package	Functionality
@@ -16,7 +14,8 @@ shiny	Create interactive web apps
 dplyr	Data manipulation
 ggplot2	Data visualization
 plotly	Interactive charts
-📌 2️⃣ Creating Sample Data
+ 
+2️⃣ Creating Sample Data
 set.seed(101)
 
 quiz_data <- data.frame(
@@ -34,7 +33,7 @@ quiz_data <- data.frame(
 
 Random scores between 40 and 100
 
-📌 3️⃣ UI (User Interface)
+ 3️⃣ UI (User Interface)
 ui <- fluidPage(
   titlePanel("Quiz Performance Dashboard"),
 
